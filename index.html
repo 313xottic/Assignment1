@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css"/>
+<link img="info-i.svg"/>
+<link rel="icon" type="image/svg+xml" href="assets/info-i.svg" />
+<title>Information World</title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1 class="h1s">Information World</h1>
+</div>
+
+<div>
+<img class="imgh" src="assets/nature-h.jpg"/>
+</div>
+
+<div id="navbar" class="midbar">
+  <form action="index.html" class="btn"><button class="btn">Home</button></form>
+  <form action="html1.html" class="btn"><button class="btn">Links</button></form>
+    <form action="html2.html" class="btn"><button class="btn">Credits</button></form>
+</div>
+
+<div id="nav-placeholder" class="nav-placeholder"></div>
+
+<div id="main" class="main">
+<div class="tboxtext">
+  <div class="wordtext">
+    <h1 class="titletext">About One Piece</h1>
+  </div>
+</div>
+  <div class="boxtext">
+    <div class="wordtext">
+        <p style="font-size: 20px; text-indent: 25px;">One Piece is a popular manga and anime series that follows the adventures of Monkey D. Luffy and his pirate crew, the Straw Hat Pirates, as they explore the world in search of the legendary treasure One Piece. The series is written and illustrated by Eiichiro Oda, who has been publishing it in Weekly Shonen Jump since 1997. The manga has been adapted into an anime by Toei Animation, which began airing in 1999.
+        </p>
+        <p style="font-size: 20px; text-indent: 25px;">The story begins with Luffy, a young boy who dreams of becoming the King of the Pirates. He accidentally eats a Devil Fruit, a rare and mysterious fruit that grants him the ability to stretch his body like rubber, but also makes him unable to swim. He sets sail from his hometown with a small boat and a straw hat given to him by his idol, the pirate Shanks. Along the way, he meets and recruits various companions who share his passion for adventure and freedom. They include Zoro, a swordsman who wants to become the world’s greatest; Nami, a navigator and thief who wants to draw a map of the world; Usopp, a sniper and liar who wants to become a brave warrior; Sanji, a chef and ladies’ man who wants to find the All Blue, a legendary sea where all kinds of fish live; Chopper, a reindeer and doctor who ate a Devil Fruit that gave him human intelligence and abilities; Robin, an archaeologist and former assassin who wants to uncover the history of the world; Franky, a cyborg and shipwright who built the crew’s second ship, the Thousand Sunny; Brook, a skeleton and musician who ate a Devil Fruit that revived him after death; and Jinbe, a fish-man and former warlord who wants to promote peace between humans and fish-men.
+        </p>
+        <p style="font-size: 20px; text-indent: 25px;">The crew travels across the Grand Line, a dangerous ocean where powerful pirates, marines, and other forces clash. They encounter many enemies and allies, such as the Seven Warlords of the Sea, a group of pirates who work for the World Government; the Four Emperors, the strongest pirates in the world; the Revolutionary Army, a rebel group led by Luffy’s father Dragon; and the Worst Generation, a group of rookie pirates who rose to fame during the timeskip. They also face various challenges and mysteries, such as ancient weapons, Devil Fruits, Haki (a mysterious power that can enhance one’s physical and mental abilities), Poneglyphs (stone tablets that contain information about the Void Century, a lost era of history), and Raftel (the final island where One Piece is hidden).
+        </p>
+        <p style="font-size: 20px; text-indent: 25px;">One Piece is an epic adventure that combines humor, action, drama, fantasy, and mystery. It has a rich and diverse cast of characters, each with their own backstory, personality, and goals. It also has a vast and detailed world-building that explores different cultures, themes, and concepts. The series is praised for its originality, creativity, storytelling, art style, characterization, and humor. It is one of the best-selling manga of all time, having sold over 516 million copies worldwide as of August 2022. It has also received many awards and accolades , such as setting the Guinness World Record for “the most copies published for the same comic book series by a single author” in 2015. It has influenced many other manga and anime works , as well as inspired various forms of media and merchandise.
+        </p>
+        <p style="font-size: 20px; text-indent: 25px;">One Piece is a series that I personally enjoy very much. I find it entertaining, engaging, inspiring, and emotional. I admire Oda’s imagination and dedication to his work. I love the characters and their interactions. I appreciate the themes and messages that the series conveys. I am always curious about what will happen next in the story. I think One Piece is a masterpiece that deserves all the praise and recognition it has received. I highly recommend it to anyone who likes manga or anime or just good stories in general.
+        </p>
+    </div>
+  </div>
+</div>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+var placeholder = document.getElementById("nav-placeholder");
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    placeholder.style.display = "block"; // Show placeholder
+  } else {
+    navbar.classList.remove("sticky");
+    placeholder.style.display = "none"; // Hide placeholder
+  }
+}
+
+</script>
+
+</body>
+
+</html>
