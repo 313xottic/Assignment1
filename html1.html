@@ -1,0 +1,80 @@
+<html>
+    
+<head>
+<link rel="stylesheet" href="style.css"/>
+<link img="info-i.svg"/>
+<link rel="icon" type="image/svg+xml" href="assets/info-i.svg" />
+<title>Information World</title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1 class="h1s">Information World</h1>
+</div>
+<div>
+
+<img class="imgh" src="assets/nature-h.jpg"/>
+
+</div>
+
+<div id="navbar" class="midbar">
+    <form action="index.html" class="btn"><button class="btn">Home</button></form>
+    <form action="html1.html" class="btn"><button class="btn">Links</button></form>
+    <form action="html2.html" class="btn"><button class="btn">Credits</button></form>
+</div>
+
+<div id="nav-placeholder" class="nav-placeholder"></div>
+
+<div id="main" class="main">
+<div class="tboxtext">
+  <div class="wordtext">
+    <center><iframe 
+      allowfullscreen="allowfullscreen"
+      mozallowfullscreen="mozallowfullscreen" 
+      msallowfullscreen="msallowfullscreen" 
+      oallowfullscreen="oallowfullscreen" 
+      webkitallowfullscreen="webkitallowfullscreen"
+      style="border: none; border-radius: 10px; " width="100%" height="100%" src="https://www.youtube.com/embed/Ades3pQbeh8">
+    </iframe></center>
+
+    
+
+
+  </div>
+</div>
+  <div class="tboxtext">
+    <div class="wordtext">
+    <center>
+      <a href="https://www.youtube.com/" target="_blank"><img class=" imgic" src="assets/yt2.svg"/></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class=" imgic" src="assets/insta.svg"/></a>
+      
+    </center>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  var placeholder = document.getElementById("nav-placeholder");
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      placeholder.style.display = "block"; // Show placeholder
+    } else {
+      navbar.classList.remove("sticky");
+      placeholder.style.display = "none"; // Hide placeholder
+    }
+  }
+  
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+hr {
+    color: white;
+
+}
+
+.imgh {
+    height:300px; 
+    width: 100%;
+    
+}
+
+.imgic {
+    height: 10%;
+    margin: 0%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+body {
+    background: gray;
+    margin:0%;
+    overscroll-behavior: none;
+    
+}
+
+.topbar{
+    background: rgb(16, 16, 16);
+    height:50px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 0;
+    display: flex;
+    
+}
+
+.midbar{
+    background: rgb(16, 16, 16);
+    height:50px;
+    width: auto;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    display: flex;
+    position: relative;
+    
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+/* box-shadow: 0px 2px 8px 5px black; */
+
+.main{
+    background-color: gray;
+    height: auto;
+    min-height: 38%;
+    padding: 20px 30px 20px 30px
+    
+}
+
+.titletext{
+    text-align: center;
+    margin: 0;
+    
+}
+
+.wordtext{
+    word-wrap: break-word;
+    color: black;
+    padding: 20px 30px 20px 30px
+    
+    
+}
+
+.tboxtext{
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px 5px black;
+    
+
+}
+
+.boxtext{
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 0px 8px 5px black;
+}
+
+
+.sticky{
+    top: 0;
+    background: rgb(16, 16, 16);
+    height:50px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    border-top: 0px solid white;
+    display: flex;
+    position: fixed;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+  }
+  .nav-placeholder {
+    height: 50px; /* Same height as your navbar */
+    display: none
+  }
+
+
+.btn{
+    /* margin: auto; */
+    /* text-align: center; */
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    font-size: 30px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    text-decoration: none
+}
+
+.btn:hover{
+    background-color: rgb(180, 30, 30);    
+}
+
+.h1s{
+    color:white;
+    /* text-align: center; */
+    margin: auto;
+    align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(16, 16, 16);
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(81, 81, 81, 0.5);
+    border-radius: 10px;
+  }
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-hight: 450px) {
+  .midbar {margin-left: 300px;}
+  /* .sidebar a {font-size: 18px;} */
+}
+
+
+
